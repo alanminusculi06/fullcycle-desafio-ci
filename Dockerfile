@@ -7,6 +7,6 @@ RUN go build main.go \
 
 FROM scratch
 
-COPY --from=builder ./src/hello_world ./hello_world
+COPY --from=builder ./src/main ./main
 
 ENTRYPOINT [ "./main" ]
