@@ -1,0 +1,9 @@
+steps:
+
+- id: Test
+  name: golang
+  args: ['go', 'test', '-v']
+
+- id: Build
+  name: golang
+  args: ['go', 'build', '.']
